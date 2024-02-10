@@ -1,0 +1,18 @@
+tls:
+  certificates:
+    - certFile: /etc/traefik/certs/foo.crt
+      keyFile: /etc/traefik/certs/foo.key
+api:
+  dashboard: true
+  insecure: true
+providers:
+  docker:
+    watch: true
+    exposedByDefault: false
+    network: commercetools-api-mock
+
+entryPoints:
+  websecure:
+    address: ":443"
+  web:
+    address: ":80"
