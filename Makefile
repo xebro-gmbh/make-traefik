@@ -1,5 +1,5 @@
 #--------------------------
-# xebro GmbH - Traefik - 0.0.1
+# xebro GmbH - Traefik - 0.0.2
 #--------------------------
 
 .PHONY: certs
